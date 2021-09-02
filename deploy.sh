@@ -22,7 +22,7 @@ fi
 git init
 git add -A
 git commit -m "${msg}"
-git push -f $githubUrl master:pages # 推送到github gh-pages分支
+git push -f $githubUrl master:pages # 推送到github pages分支
 
 cd -
 rm -rf docs/.vuepress/dist
