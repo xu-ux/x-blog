@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>通过GitHub Action发布vuepress到github Page</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="Just playing around">
+    
+    <link rel="preload" href="/x-blog/assets/css/0.styles.f8058c8a.css" as="style"><link rel="preload" href="/x-blog/assets/js/app.fec2b25f.js" as="script"><link rel="preload" href="/x-blog/assets/js/2.6d9941b7.js" as="script"><link rel="preload" href="/x-blog/assets/js/11.01f9be32.js" as="script"><link rel="prefetch" href="/x-blog/assets/js/10.f1c290f6.js"><link rel="prefetch" href="/x-blog/assets/js/12.e2b3ec8e.js"><link rel="prefetch" href="/x-blog/assets/js/13.4bc98cf0.js"><link rel="prefetch" href="/x-blog/assets/js/3.2217ee07.js"><link rel="prefetch" href="/x-blog/assets/js/4.f8729791.js"><link rel="prefetch" href="/x-blog/assets/js/5.59691e09.js"><link rel="prefetch" href="/x-blog/assets/js/6.dbb26e2c.js"><link rel="prefetch" href="/x-blog/assets/js/7.9ed66048.js"><link rel="prefetch" href="/x-blog/assets/js/8.ff799250.js"><link rel="prefetch" href="/x-blog/assets/js/9.f11a38ed.js">
+    <link rel="stylesheet" href="/x-blog/assets/css/0.styles.f8058c8a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/x-blog/" class="home-link router-link-active"><img src="/x-blog/img/logo.jpeg" alt="" class="logo"> <!----></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/x-blog/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/x-blog/guide/" class="nav-link">
+  专栏
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="教程" class="dropdown-title"><span class="title">教程</span> <span class="arrow down"></span></button> <button type="button" aria-label="教程" class="mobile-dropdown-title"><span class="title">教程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/x-blog/blogs/GithubActions/" class="nav-link router-link-active">
+  GithubAction
+</a></li><li class="dropdown-item"><!----> <a href="/x-blog/blogs/VuePress/" class="nav-link">
+  Vuepress
+</a></li></ul></div></div><div class="nav-item"><a href="https://xu-ux.github.io/note" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  笔记
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/xu-ux/x-blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    仓库
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/x-blog/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/x-blog/guide/" class="nav-link">
+  专栏
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="教程" class="dropdown-title"><span class="title">教程</span> <span class="arrow down"></span></button> <button type="button" aria-label="教程" class="mobile-dropdown-title"><span class="title">教程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/x-blog/blogs/GithubActions/" class="nav-link router-link-active">
+  GithubAction
+</a></li><li class="dropdown-item"><!----> <a href="/x-blog/blogs/VuePress/" class="nav-link">
+  Vuepress
+</a></li></ul></div></div><div class="nav-item"><a href="https://xu-ux.github.io/note" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  笔记
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/xu-ux/x-blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    仓库
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Github Actions</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/x-blog/blogs/GithubActions/" aria-current="page" class="sidebar-link">Github Actions专栏</a></li><li><a href="/x-blog/blogs/GithubActions/Github Actions功能实现Vuepress项目push后自动部署到Github Page.html" class="sidebar-link">Github Actions功能实现Vuepress项目push后自动部署到Github Page</a></li><li><a href="/x-blog/blogs/GithubActions/通过GitHub Action发布vuepress到github Page.html" class="active sidebar-link">通过GitHub Action发布vuepress到github Page</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/x-blog/blogs/GithubActions/通过GitHub Action发布vuepress到github Page.html#workflow-文件示例-发布vuepress-博客到github-page" class="sidebar-link">workflow 文件示例，发布vuepress 博客到github page.</a></li><li class="sidebar-sub-header"><a href="/x-blog/blogs/GithubActions/通过GitHub Action发布vuepress到github Page.html#secret-配置" class="sidebar-link">secret 配置</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="通过github-action发布vuepress到github-page"><a href="#通过github-action发布vuepress到github-page" class="header-anchor">#</a> 通过GitHub Action发布vuepress到github Page</h1> <h1 id="github-action-的概念"><a href="#github-action-的概念" class="header-anchor">#</a> GitHub Action 的概念</h1> <p>Github action 可以帮助我们完成持续集成（CI）和持续部署（CD）。你可以自定义工作流程，而且你还可以引用<a href="https://links.jianshu.com/go?to=https%3A%2F%2Fgithub.com%2Fmarketplace%3Ftype%3Dactions" target="_blank" rel="noopener noreferrer">github action<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 市场里面其他人提交的action。可以先熟悉下以下概念：</p> <ul><li>Workflow: 工作流可以让你在GitHub 上完成构建，测试，打包，发布或部署任意项目。工作流由一个或者多个job组成。workflow file 文件放在.github/workflows这个目录下面。</li> <li>job: 工作流由一个或者多个job组成，还可以在工作流中定义job的依赖顺序。</li> <li>Step: 是一个单独的步骤，可以是执行某一个run 命令，或者一个action。一个job里面可以包含多个step。</li> <li>action: 是工作流中最小的可移植模块，action 可以在社区共享。action需要step里面去执行。</li></ul> <h1 id="workflow-file-文件介绍"><a href="#workflow-file-文件介绍" class="header-anchor">#</a> workflow file 文件介绍</h1> <p>workflow file 文件放在.github/workflows这个目录下面。workflow 文件以<a href="https://links.jianshu.com/go?to=http%3A%2F%2Fwww.ruanyifeng.com%2Fblog%2F2016%2F07%2Fyaml.html" target="_blank" rel="noopener noreferrer">YAML格式<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>,</p> <ul><li><p>name 是workflow的名称</p></li> <li><p>on: push 是触发条件，在推送的时候触发，还可以指定分支</p> <div class="language-yaml line-numbers-mode"><pre class="language-yaml"><code><span class="token key atrule">on</span><span class="token punctuation">:</span>
+  <span class="token key atrule">push</span><span class="token punctuation">:</span>
+    <span class="token key atrule">branches</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> master
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div></li> <li><p>runs-on: 是依赖虚拟环境runner</p></li></ul> <h2 id="workflow-文件示例-发布vuepress-博客到github-page"><a href="#workflow-文件示例-发布vuepress-博客到github-page" class="header-anchor">#</a> workflow 文件示例，发布vuepress 博客到github page.</h2> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>name: Deploy GitHub Pages
+
+<span class="token comment"># 触发条件：在 push 到 master 分支后</span>
+on:
+  push:
+    branches:
+      - master
+
+<span class="token comment"># 任务</span>
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: <span class="token boolean">false</span>
+
+      - name: <span class="token function">install</span>
+        run: <span class="token function">yarn</span> <span class="token function">install</span> 
+
+      - name: Build
+        run:  <span class="token function">yarn</span> build
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: <span class="token variable">${{ secrets.ACCESS_TOKEN }</span><span class="token punctuation">}</span>
+          REPOSITORY_NAME: aaronTang98/aaronTang98.github.io
+          BRANCH: master
+          FOLDER: public
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br></div></div><ul><li>上面yml的含义是</li> <li>第一步拉取代码</li> <li>第二步 安装</li> <li>第三步 编译</li> <li>第四步 发送到github page的工程和目录</li></ul> <h2 id="secret-配置"><a href="#secret-配置" class="header-anchor">#</a> secret 配置</h2> <p>这个示例需要将构建成果发到 GitHub 仓库，因此需要 GitHub 密钥。按照<a href="https://links.jianshu.com/go?to=https%3A%2F%2Fhelp.github.com%2Fen%2Farticles%2Fcreating-a-personal-access-token-for-the-command-line" target="_blank" rel="noopener noreferrer">官方文档<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，生成一个密钥。然后，将这个密钥储存到当前仓库的<code>Settings/Secrets</code>里面。</p> <p>上面的配置中引入了变量<code>secrets.ACCESS_TOKEN</code>，这个可以在repository里面选择settings。</p> <p><img src="images.assets/20498052-2c24231e34feb538.png" alt="img"></p> <ol><li>在左边的菜单选择 <strong>Secrets</strong>.</li> <li>点击添加一个新的 <strong>secret</strong>.</li> <li>输入secret的<strong>名字</strong>，例如：ACCESS_TOKEN</li> <li>输入secret的<strong>值</strong></li> <li>点击<strong>Add secret</strong>.</li></ol></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/xu-ux/x-blog/edit/master/docs/blogs/GithubActions/通过GitHub Action发布vuepress到github Page.md" target="_blank" rel="noopener noreferrer">Edit this page</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">9/3/2021, 6:10:46 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/x-blog/blogs/GithubActions/Github Actions功能实现Vuepress项目push后自动部署到Github Page.html" class="prev">
+        Github Actions功能实现Vuepress项目push后自动部署到Github Page
+      </a></span> <!----></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/x-blog/assets/js/app.fec2b25f.js" defer></script><script src="/x-blog/assets/js/2.6d9941b7.js" defer></script><script src="/x-blog/assets/js/11.01f9be32.js" defer></script>
+  </body>
+</html>
