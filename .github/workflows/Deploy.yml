@@ -32,12 +32,10 @@ jobs: # 工作流
         run:  npm run docs:build
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v2
-        env:
-          ACTIONS_DEPLOY_KEY: ${{ secrets.ACCESS_TOKEN }}
-          EXTERNAL_REPOSITORY: xu-ux/x-blog
-          PUBLISH_BRANCH: pages
-          PUBLISH_DIR: docs/.vuepress/dist
+        uses: peaceiris/actions-gh-pages@v3
         with:
-            emptyCommits: false
+          personal_token: ${{ secrets.ACCESS_TOKEN }}
+          external_repository: xu-ux/x-blog
+          publish_branch: pages
+          publish_dir: docs/.vuepress/dist
 
