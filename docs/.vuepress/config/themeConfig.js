@@ -7,7 +7,7 @@ module.exports = {
     // 导航栏右侧
     nav,
     // 侧边栏
-    sidebar,
+    //sidebar,
     // 目录深度
     sidebarDepth: 2,
     // 最后更新时间

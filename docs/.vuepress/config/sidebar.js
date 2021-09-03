@@ -2,11 +2,7 @@
 
 // 侧边栏
 module.exports = {
-
-
-  title: '专栏',
-  collapsable: false,
-  children: ['/guide/']
+  '/blogs/VuePress/': getSidebar('Vuepress专栏','介绍'),
 
 // '/01.前端/': [
   //   {
@@ -108,4 +104,19 @@ module.exports = {
   //   //   ]
   //   // }
   // ],
+}
+
+// https://github1s.com/vuejs/vuepress/blob/f74a6ec5d3a217c75561492bac5b76c3611e6f1f/packages/docs/docs/.vuepress/config.js#L68
+function getSidebar (groupA, introductionA) {
+  return [
+    {
+      title: groupA,
+      collapsable: true,
+      sidebarDepth: 2,
+      children: [
+        ['', introductionA], // README
+        'Vuepress默认主题配置',
+      ]
+    }
+  ]
 }

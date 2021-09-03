@@ -1,14 +1,16 @@
 ---
 sidebar: auto
 description: vuepress相关配置
+date: 2021-09-03
 search:
   - 配置
-  - 主题
-  - 索引
+  - Vuepress
+  - 入门
 tags:
-  - 配置
-  - 主题
-  - 索引
+  - Vuepress配置
+  - 入门
+categories:
+  - 教程
 meta:
   - name: description
     content: vuepress相关配置
