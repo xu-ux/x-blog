@@ -1,5 +1,5 @@
 ---
-sidebar: auto
+# sidebar: auto 直接失效
 sidebarDepth: 4
 description: Github Actions功能实现Vuepress项目push后自动部署到Github Page
 date: 2021-09-03

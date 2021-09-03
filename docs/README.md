@@ -2,8 +2,8 @@
 home: true
 heroImage: /img/logo.jpeg
 heroText: 个人博客
-tagline: 记录文摘
-actionText: 开始阅读
+tagline: ⚗测试vuepress
+actionText: 🔬开始阅读
 actionLink: /guide/
 features:
 - title: 简洁至上

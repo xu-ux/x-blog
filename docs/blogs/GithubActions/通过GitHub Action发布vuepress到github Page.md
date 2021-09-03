@@ -1,3 +1,17 @@
+---
+description: 通过GitHub Action发布vuepress到github Page
+date: 2021-09-03
+search:
+  - 自动部署
+  - Vuepress
+  - Github Actions
+  - Github Page
+tags:
+  - Github Page
+  - Github Actions
+categories:
+  - 教程
+---
 # 通过GitHub Action发布vuepress到github Page
 
 # GitHub Action 的概念
