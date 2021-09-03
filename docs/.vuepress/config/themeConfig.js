@@ -3,7 +3,7 @@ const sidebar = require("./sidebar.js")
 
 module.exports = {
     // 导航栏log
-    logo: '/img/logo.jpeg',
+    logo: '/img/logoS.png',
     // 导航栏右侧
     nav,
     // 侧边栏

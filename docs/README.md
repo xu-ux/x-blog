@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /img/logo.jpeg
+heroImage: /img/logoS.png
 heroText: 个人博客
 tagline: ⚗测试vuepress
 actionText: 🔬开始阅读
