@@ -1,5 +1,5 @@
 module.exports = [
-    { text: 'Home', link: '/' },
+/*    { text: 'Home', link: '/' },
     { text: 'Guide', link: '/guide/' },
     { text: 'External', link: 'https://google.com' },
     {
@@ -16,7 +16,10 @@ module.exports = [
                     }
 
                 ] },
-            { text: 'Group2', items: [/*  */] }
+            { text: 'Group2', items: [/!*  *!/] }
         ]
-    }
+    }*/
+    { text: '主页', link: '/' },
+    { text: '专栏', link: '/guide/' },
+    { text: '笔记', link: 'https://xu-ux.github.io/note' },
 ]
