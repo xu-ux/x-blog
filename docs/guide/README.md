@@ -58,7 +58,7 @@ VuePress由两部分组成：一部分是支持用 Vue 开发主题的极简静�
 node -v
 ```
 
-![img](./images.assets/13878898-4fbbbcaf9f5ea3fa.png)
+![img](./images/13878898-4fbbbcaf9f5ea3fa.png)
 
 ##### 全局安装
 
@@ -98,7 +98,7 @@ npm init -y
 }
 ```
 
-![img](./images.assets/13878898-b6764769e9f2410a.png)
+![img](./images/13878898-b6764769e9f2410a.png)
 
 ##### 建立基本目录
 
@@ -169,7 +169,7 @@ vuepress dev docs
 运行上述代码，最后会提示预览的网址[http://localhost:8080/](https://links.jianshu.com/go?to=http%3A%2F%2Flocalhost%3A8080%2F)（端口号可根据配置进行修改[https://vuepress.vuejs.org/zh/config/#port](https://links.jianshu.com/go?to=https%3A%2F%2Fvuepress.vuejs.org%2Fzh%2Fconfig%2F%23port)）
  打开网址，我们就可以看到如下画面：
 
-![img](./images.assets/13878898-dfb59b1bd0fbe464.png)
+![img](./images/13878898-dfb59b1bd0fbe464.png)
 
 
 
@@ -181,7 +181,7 @@ README.md中的内容已完美呈现！
 
 
 
-![img](./images.assets/13878898-de12112568938f41.png)
+![img](./images/13878898-de12112568938f41.png)
 
 
 
@@ -228,7 +228,7 @@ content...
 
 
 
-![img](./images.assets/13878898-c3d63b16024b3c31.png)
+![img](./images/13878898-c3d63b16024b3c31.png)
 
 
 
@@ -257,7 +257,7 @@ sidebar: [
 
 
 
-![img](./images.assets/13878898-2939d56d4adcc775.png)
+![img](./images/13878898-2939d56d4adcc775.png)
 
 ##### 总结
 
