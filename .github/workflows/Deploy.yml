@@ -33,4 +33,8 @@ jobs: # 工作流
           external_repository: xu-ux/x-blog
           publish_branch: pages
           publish_dir: docs/.vuepress/dist
+          
+      - name: Notification
+        run: |
+          curl https://qmsg.zendee.cn/send/${{secrets.QMSG_KEY}} -X POST -d 'msg=部署完成, 请访问 https://xu-ux.github.io/x-blog/ 进行确认 '
 
