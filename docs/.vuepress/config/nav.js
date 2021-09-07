@@ -9,5 +9,9 @@ module.exports = [
             { text: "其他", link: "/blogs/Other/" }
         ],
     },
+    {text: '书籍', items: [
+            { text: "《Typescript》", link: "/blogs/Typescript/" },
+        ],
+    },
     { text: '笔记', link: 'https://xu-ux.github.io/note' },
 ]
