@@ -22,6 +22,7 @@
     </section>
 </template>
 <script>
+/* https://github.com/chhpt/vuepress-blog */
     export default {
         name: 'BlogPostPreview',
         props: {

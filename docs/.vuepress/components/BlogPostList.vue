@@ -45,6 +45,7 @@
 
 
 <script>
+/* https://github.com/chhpt/vuepress-blog */
 export default {
   name: 'BlogPostList',
   props: {
