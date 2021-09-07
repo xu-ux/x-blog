@@ -1,6 +1,8 @@
 ---
 description: 通过GitHub Action发布vuepress到github Page
-date: 2021-09-03
+title: 通过GitHub Action发布vuepress到github Page
+excerpt: 'Github action 可以帮助我们完成持续集成（CI）和持续部署（CD）。你可以自定义工作流程，而且你还可以引用[github action](https://links.jianshu.com/go?to=https%3A%2F%2Fgithub.com%2Fmarketplace%3Ftype%3Dactions) 市场里面其他人提交的action。可以先熟悉下以下概念：Workflow: 工作流可以让你在GitHub 上完成构建，测试，打包，发布或部署任意项目。...'
+date: 2021-09-03 00:00:00
 search:
   - 自动部署
   - Vuepress

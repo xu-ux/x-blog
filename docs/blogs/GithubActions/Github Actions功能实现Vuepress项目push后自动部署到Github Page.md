@@ -2,7 +2,9 @@
 # sidebar: auto 直接失效
 sidebarDepth: 4
 description: Github Actions功能实现Vuepress项目push后自动部署到Github Page
-date: 2021-09-03
+title: Github Actions功能实现Vuepress项目push后自动部署到Github Page
+excerpt: '点击要使用仓库`x-blog`的Actions，选择设置一种workflow模板。 选择Node.js的模板 。选择后配置相关动作和流程，然后提交就可以了。提交后会在仓库中生成`./github/workflows/xxx.yml`文件以后每次执行配置的动作就可以自动执行配置的流程'
+date: 2021-09-02 00:00:00
 search:
   - 自动部署
   - Vuepress

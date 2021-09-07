@@ -1,4 +1,12 @@
+---
+date: 2021-09-03 00:00:00
+title: Vuepress默认主题配置
+excerpt: 默认的主题提供了一个首页（Homepage）的布局 (用于 [这个网站的主页](https://vuepress.vuejs.org/zh/))。
+tags:
+  - Vuepress
+  - 配置
 
+---
 
 # 默认主题配置
 
