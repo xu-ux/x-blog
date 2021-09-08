@@ -1,4 +1,4 @@
-# Wiki
+# [Wiki](../README.md)
 
 * [TypeScript里的this](this-in-typescript.md)
 * [编码规范](coding_guidelines.md)

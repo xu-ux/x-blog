@@ -1,4 +1,4 @@
-# 手册
+# [手册](../README.md)
 
 -   [基础类型](basic-types.md)
 -   [接口](interfaces.md)

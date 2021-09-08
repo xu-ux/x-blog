@@ -1,5 +1,5 @@
 # 《Typescript中文版》
-# 1. 快速上手
+## 1. 快速上手
 
 - [ASP.NET Core](tutorials/asp.net-core.md)
 - [ASP.NET 4](tutorials/asp.net-4.md)
@@ -70,7 +70,7 @@
 -   [变量声明](reference/variable-declarations.md)
 -   [模版字面量类型](handbook-v2/type-manipulation/template-literal-types.md)
 
-##  如何书写声明文件
+##  5. 如何书写声明文件
 
 -   [介绍](declaration-files/introduction.md)
 -   [举例](declaration-files/by-example.md)

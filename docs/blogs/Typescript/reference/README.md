@@ -1,4 +1,4 @@
-# 手册（进阶）
+# [手册（进阶）](../README.md)
 
 -   [高级类型](advanced-types.md)
 -   [声明合并](declaration-merging.md)

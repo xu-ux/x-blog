@@ -1,4 +1,4 @@
-# 快速上手
+# [快速上手](../README.md)
 
 * [ASP.NET Core](asp.net-core.md)
 * [ASP.NET 4](asp.net-4.md)

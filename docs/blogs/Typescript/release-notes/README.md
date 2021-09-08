@@ -1,4 +1,4 @@
-# 新增功能
+# [新增功能](../README.md)
 
 * [TypeScript 3.8](typescript-3.8.md)
 * [TypeScript 3.7](typescript-3.7.md)

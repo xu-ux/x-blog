@@ -1,4 +1,4 @@
-# 工程配置
+# [工程配置](../README.md)
 
   * [tsconfig.json](project-config/tsconfig.json.md)
   * [工程引用](project-config/project-references.md)
