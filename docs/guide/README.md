@@ -22,6 +22,8 @@ meta:
 
 > VuePress官网：[https://vuepress.vuejs.org/zh/](https://links.jianshu.com/go?to=https%3A%2F%2Fvuepress.vuejs.org%2Fzh%2F)
 
+[[TOC]]
+
 ## 介绍
 
 VuePress由两部分组成：一部分是支持用 Vue 开发主题的极简静态网站生成器，另一个部分是为书写技术文档而优化的默认主题。它的诞生初衷是为了支持 Vue 及其子项目的文档需求。
@@ -266,3 +268,4 @@ sidebar: [
 通过上述操作，本项目已成功完成了技术文档的基本模型，如更个性化的配置可通过官网按需求优化；
  到此，本文结束~
 
+<Vssue title="vuepress相关配置" />

@@ -27,6 +27,9 @@
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.8.2",
     "vuepress": "^1.8.2",
-    "vuepress-plugin-auto-sidebar": "^2.3.2"
+    "vuepress-plugin-auto-sidebar": "^2.3.2",
+    "@vssue/api-github-v3": "^1.4.7",
+    "@vssue/vuepress-plugin-vssue": "^1.4.8",
+    "vuepress-plugin-one-click-copy": "^1.0.6"
   }
 }

@@ -14,7 +14,7 @@ tags:
 本页所列的选项仅对默认主题生效。如果你在使用一个自定义主题，选项可能会有不同。
 :::
 
-
+[[toc]]
 
 ## 默认的页面路由
 
@@ -565,3 +565,5 @@ layout: SpecialLayout
 ```
 
 这将会为当前的页面渲染 `.vuepress/components/SpecialLayout.vue` 布局。
+
+<Vssue title="Vuepress默认主题配置" />

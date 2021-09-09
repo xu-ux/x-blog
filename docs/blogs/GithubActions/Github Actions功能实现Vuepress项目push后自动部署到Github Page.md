@@ -123,3 +123,6 @@ jobs: # 工作流
 插件市场：https://github.com/marketplace?type=actions
 
 ![image-20210903104516765](./images.assets/image-20210903104516765.png)
+
+
+<Vssue title="GithubActions功能实现自动部署"/>
