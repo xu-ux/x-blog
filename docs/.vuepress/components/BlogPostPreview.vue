@@ -1,7 +1,7 @@
 <template>
     <section class="blog-post">
         <div class="blog-post__title">
-            <a :href="path"
+            <a :href="base + path"
                class="blog-post__link">
                 {{ title }}
             </a>
@@ -23,45 +23,52 @@
 </template>
 <script>
 /* https://github.com/chhpt/vuepress-blog */
-    export default {
-        name: 'BlogPostPreview',
-        props: {
-            publishDate: {
-                type: String,
-                required: true
-            },
-            tags: {
-                type: Array,
-                required: false
-            },
-            title: {
-                type: String,
-                required: true
-            },
-            path: {
-                type: String,
-                required: true
-            },
-            excerpt: {
-                type: String,
-                required: false
-            }
-        },
-        computed: {
-            formatPublishDate() {
-                const dateFormat = new Date(this.publishDate);
-                const options = {
-                    year: 'numeric',
-                    month: '2-digit',
-                    day: '2-digit'
-                };
+import {base} from "../config";
 
-                return dateFormat
-                    .toLocaleDateString('zh-Hans-CN', options)
-                    .replace(/\//g, '-');
-            }
+export default {
+    name: 'BlogPostPreview',
+    data() {
+      return {
+        base: base.substring(0,base.lastIndexOf("/"))
+      }
+    },
+    props: {
+        publishDate: {
+            type: String,
+            required: true
+        },
+        tags: {
+            type: Array,
+            required: false
+        },
+        title: {
+            type: String,
+            required: true
+        },
+        path: {
+            type: String,
+            required: true
+        },
+        excerpt: {
+            type: String,
+            required: false
         }
-    };
+    },
+    computed: {
+        formatPublishDate() {
+          const dateFormat = new Date(this.publishDate);
+          const options = {
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit'
+          };
+
+          return dateFormat
+              .toLocaleDateString('zh-Hans-CN', options)
+              .replace(/\//g, '-');
+        }
+    }
+};
 </script>
 
 <style lang="stylus" scoped>
