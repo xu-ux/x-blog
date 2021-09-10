@@ -36,5 +36,5 @@ jobs: # 工作流
           
       - name: Notification
         run: |
-          curl https://qmsg.zendee.cn/send/${{ secrets.QMSG_KEY }} -X POST -d 'msg=部署完成, 请访问 https://xu-ux.github.io/x-blog/ 进行确认 '
+          curl https://qmsg.zendee.cn/group/${{ secrets.QMSG_KEY }} -X POST -d 'msg=部署完成, 请访问 xu-ux.github.io/x-blog 进行确认 '
 
