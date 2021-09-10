@@ -1,5 +1,6 @@
 ---
 description: 通过GitHub Action发布vuepress到github Page
+layout: ArticleLayout
 title: 通过GitHub Action发布vuepress到github Page
 excerpt: 'Github action 可以帮助我们完成持续集成（CI）和持续部署（CD）。你可以自定义工作流程，而且你还可以引用[github action](https://links.jianshu.com/go?to=https%3A%2F%2Fgithub.com%2Fmarketplace%3Ftype%3Dactions) 市场里面其他人提交的action。可以先熟悉下以下概念：Workflow: 工作流可以让你在GitHub 上完成构建，测试，打包，发布或部署任意项目。...'
 date: 2021-09-03 00:00:00
@@ -13,6 +14,11 @@ tags:
   - Github Actions
 categories:
   - 教程
+
+author:
+    name: xu-ux
+    link: https://github.com/xu-ux
+
 ---
 # 通过GitHub Action发布vuepress到github Page
 
@@ -24,7 +30,7 @@ Github action 可以帮助我们完成持续集成（CI）和持续部署（CD�
 - job: 工作流由一个或者多个job组成，还可以在工作流中定义job的依赖顺序。
 - Step: 是一个单独的步骤，可以是执行某一个run 命令，或者一个action。一个job里面可以包含多个step。
 - action: 是工作流中最小的可移植模块，action 可以在社区共享。action需要step里面去执行。
-
+<!-- more -->
 # workflow file 文件介绍
 
 workflow file 文件放在.github/workflows这个目录下面。workflow 文件以[YAML格式](https://links.jianshu.com/go?to=http%3A%2F%2Fwww.ruanyifeng.com%2Fblog%2F2016%2F07%2Fyaml.html),
@@ -103,5 +109,3 @@ jobs:
 3. 输入secret的**名字**，例如：ACCESS_TOKEN
 4. 输入secret的**值**
 5. 点击**Add secret**.
-
-<Vssue title="发布vuepress到GithubPage" />

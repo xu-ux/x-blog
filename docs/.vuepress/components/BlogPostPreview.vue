@@ -6,10 +6,12 @@
                 {{ title }}
             </a>
         </div>
-        <p v-if="excerpt"
+      <div v-if="excerpt"
            class="blog-post__excerpt">
+          <a :href="base + path" class="blog-post__excerpt__link">
             {{ excerpt }}
-        </p>
+          </a>
+      </div>
         <div class="blog-post__info">
             <span class="tag-list">
                 <span v-for="tag in tags"
@@ -85,6 +87,13 @@ export default {
 
     .blog-post__excerpt {
         color: #515a6e;
+
+      .blog-post__excerpt__link {
+        color: #515a6e;
+        &:hover {
+          text-decoration: none;
+        }
+      }
     }
 
     .blog-post__link {

@@ -2,6 +2,11 @@
 sidebar: auto
 description: vuepress相关配置
 date: 2021-09-03
+layout: ArticleLayout
+author:
+    name: xu-ux
+    link: https://github.com/xu-ux
+    
 search:
   - 配置
   - Vuepress
@@ -28,7 +33,7 @@ meta:
 
 VuePress由两部分组成：一部分是支持用 Vue 开发主题的极简静态网站生成器，另一个部分是为书写技术文档而优化的默认主题。它的诞生初衷是为了支持 Vue 及其子项目的文档需求。
  它以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作；享受 Vue + webpack 的开发体验，可以在 Markdown 中使用 Vue 组件，又可以使用 Vue 来开发自定义主题；它会为每个页面预渲染生成静态的 HTML，同时，每个页面被加载的时候，将作为 SPA 运行。
-
+<!-- more -->
 ## 特性
 
 - 为技术文档而优化的内置 Markdown 拓展
@@ -268,4 +273,3 @@ sidebar: [
 通过上述操作，本项目已成功完成了技术文档的基本模型，如更个性化的配置可通过官网按需求优化；
  到此，本文结束~
 
-<Vssue title="vuepress相关配置" />

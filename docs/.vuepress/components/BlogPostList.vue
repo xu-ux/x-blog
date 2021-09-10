@@ -20,9 +20,8 @@
       </button>
     </div>
     <ul class="blog-list">
-      <li v-for="(item, index) in filteredList"
-          class="blog-list__item">
-        <BlogPostPreview v-show="index <= displayRange.end"
+      <li v-for="(item, index) in filteredList" class="blog-list__item">
+        <BlogPostPreview v-show="index <= displayRange.end && item.frontmatter.title"
                          :excerpt="item.frontmatter.excerpt"
                          :path="item.path"
                          :publishDate="item.frontmatter.date"

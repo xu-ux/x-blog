@@ -1,6 +1,7 @@
 ---
 # sidebar: auto 直接失效
 sidebarDepth: 4
+layout: ArticleLayout
 description: Github Actions功能实现Vuepress项目push后自动部署到Github Page
 title: Github Actions功能实现Vuepress项目push后自动部署到Github Page
 excerpt: '点击要使用仓库`x-blog`的Actions，选择设置一种workflow模板。 选择Node.js的模板 。选择后配置相关动作和流程，然后提交就可以了。提交后会在仓库中生成`./github/workflows/xxx.yml`文件以后每次执行配置的动作就可以自动执行配置的流程'
@@ -20,6 +21,11 @@ meta:
     content: Github Actions功能实现Vuepress项目push后自动部署到Github Page
   - name: keywords
     content: [vue, vuepress, blog, Github Page,Github Actions]
+
+author:
+    name: xu-ux
+    link: https://github.com/xu-ux
+    
 ---
 # Github Actions功能实现Vuepress项目push后自动部署到Github Page
 
@@ -33,7 +39,7 @@ meta:
 
 选择Node.js的模板
 选择后配置相关动作和流程，然后提交就可以了。提交后会在仓库中生成`./github/workflows/xxx.yml`文件以后每次执行配置的动作就可以自动执行配置的流程
-
+<!-- more -->
 ### 推荐配置
 
 ```shell
@@ -123,6 +129,3 @@ jobs: # 工作流
 插件市场：https://github.com/marketplace?type=actions
 
 ![image-20210903104516765](./images.assets/image-20210903104516765.png)
-
-
-<Vssue title="GithubActions功能实现自动部署"/>

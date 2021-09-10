@@ -1,11 +1,15 @@
 ---
 date: 2021-09-03 00:00:00
 title: Vuepress默认主题配置
+layout: ArticleLayout
 excerpt: 默认的主题提供了一个首页（Homepage）的布局 (用于 [这个网站的主页](https://vuepress.vuejs.org/zh/))。
 tags:
   - Vuepress
   - 配置
 
+author:
+    name: xu-ux
+    link: https://github.com/xu-ux
 ---
 
 # 默认主题配置
@@ -19,7 +23,7 @@ tags:
 ## 默认的页面路由
 
 此处我们把 `docs` 目录作为 `targetDir` （参考 [命令行接口](https://vuepress.vuejs.org/zh/api/cli.html#基本用法)），下面所有的“文件的相对路径”都是相对于 `docs` 目录的。在项目根目录下的 `package.json` 中添加 `scripts` ：
-
+<!-- more -->
 ```json
 {
   "scripts": {

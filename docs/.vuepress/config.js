@@ -5,6 +5,7 @@ module.exports = {
     //title: 'Hello VuePress',
     description: 'Just playing around',
     // 代码行号
+    // https://github.com/markdown-it/markdown-it https://www.npmjs.com/search?q=keywords:markdown-it-plugin
     markdown: {
         lineNumbers: true,
     },
@@ -25,18 +26,11 @@ module.exports = {
                     }
                 ]
             }],
+            // https://github.com/dongyuanxin/vuepress-plugin-comment
+            // https://github.com/JoeyBling/vuepress-plugin-mygitalk
+            // https://xxholly32.github.io/vuepress-plugin-gitalk-maker
             // https://vssue.js.org/zh/guide/vuepress.html
-            [
-                '@vssue/vuepress-plugin-vssue', {
-                    // 设置 `platform` 而不是 `api`
-                    platform: 'github',
-                    // 其他的 Vssue 配置
-                    owner: 'xu-ux',
-                    repo: 'x-blog',
-                    clientId: '466a2d5e1b154e39d7cc',
-                    clientSecret: 'b9dfd431510455ec5879be1b64e47b72829f3d86',
-                },
-            ],
+
             [
                 '@vuepress/last-updated', {
                     /*transformer: (timestamp, lang) => {
