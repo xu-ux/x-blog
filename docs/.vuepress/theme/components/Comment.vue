@@ -1,6 +1,6 @@
 <template>
   <div class="vuepress-comment-container">
-    <Vssue title="articleTitle"></Vssue>
+    <Vssue :title="articleTitle"></Vssue>
   </div>
 </template>
 
