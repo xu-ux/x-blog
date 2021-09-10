@@ -32,5 +32,11 @@ module.exports = {
     // 默认是 false, 设置为 true 来启用
     editLinks: true,
     // 默认为 "Edit this page"
-    editLinkText: '在 GitHub 上编辑此页'
+    editLinkText: '在 GitHub 上编辑此页',
+    footer: {
+        // 页脚信息
+        createYear: 2021, // 博客创建年份
+        copyrightInfo:
+            'Xu-ux | <a href="https://github.com/xu-ux" target="_blank">GitHub</a>',
+    }
 }

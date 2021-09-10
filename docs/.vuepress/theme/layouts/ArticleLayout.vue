@@ -48,6 +48,7 @@
         <slot name="page-bottom" />
         <!--    评论区  -->
         <Comment/>
+        <Footer/>
       </template>
     </Page>
 
@@ -63,11 +64,13 @@ import Sidebar from '@theme/components/Sidebar.vue'
 import Comment from "../components/Comment";
 import ArticleInfo from "../components/ArticleInfo";
 import { resolveSidebarItems } from '../util'
+import Footer from "../components/Footer";
 
 export default {
   name: 'Layout',
 
   components: {
+    Footer,
     Home,
     Page,
     Sidebar,
