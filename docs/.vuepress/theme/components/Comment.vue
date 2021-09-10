@@ -7,9 +7,11 @@
 <script>
 export default {
   name: "Comment",
-  articleTitle() {
-    return this.$page.title
-  },
+  computed:{
+    articleTitle() {
+      return this.$page.title
+    },
+  }
 }
 </script>
 
