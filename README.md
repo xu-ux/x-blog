@@ -10,6 +10,10 @@
 
 https://vuepress.vuejs.org/zh/theme/default-theme-config.html
 
+开发主题
+
+https://vuepress.vuejs.org/zh/theme/writing-a-theme.html
+
 其他主题
 
 https://github.com/xugaoyi/vuepress-theme-vdoing
