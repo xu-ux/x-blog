@@ -41,9 +41,13 @@ export default {
 
 <style lang='stylus'>
 .footer
-  padding 5rem 1.5rem 2.5rem
+  //position absolute
+  height 8rem
+  padding 2rem 1.5rem 2rem
   text-align center
-  color #666
+  line-height: 1.6rem;
+  //color #666
   box-sizing border-box
   font-size 0.85rem
+
 </style>
